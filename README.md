@@ -24,9 +24,9 @@ A breakthrough in building models for image classification came with the discove
 >Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).
 The depth of the output feature map, which corresponds to the number of filters that are applied.
 During a convolution, the filters (matrices the same size as the tile size) effectively slide over the input feature map's grid horizontally and vertically, one pixel at a time, extracting each corresponding tile (see Figure 3).
->![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/d8722271-0e63-433c-a88f-5d815d262cec)
->![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/c3198ed9-1cad-4b8d-ac90-504128762d0d)
 
+
+![convolution_overview](https://github.com/naynay007/pokemon-identifier-/assets/108524891/09de1864-a9e8-4718-a65c-680e838bbb26)
 
 
 >A 3x3 convolution over a 4x4 feature
