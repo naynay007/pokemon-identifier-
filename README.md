@@ -21,18 +21,27 @@ A breakthrough in building models for image classification came with the discove
 >1. Convolution
 >A convolution extracts tiles of the input feature map, and applies filters to them to compute new features, producing an output feature map, or convolved feature (which may have a different size and depth than the input feature map). Convolutions are defined by two parameters:
 
->Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).
-The depth of the output feature map, which corresponds to the number of filters that are applied.
-During a convolution, the filters (matrices the same size as the tile size) effectively slide over the input feature map's grid horizontally and vertically, one pixel at a time, extracting each corresponding tile (see Figure 3).
+> **Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).**
+>**The depth of the output feature map, which corresponds to the number of filters that are applied.**
 
+>During a convolution, the filters (matrices the same size as the tile size) effectively slide over the input feature map's grid horizontally and vertically, one pixel at a time, extracting >each corresponding tile (see Figure 1).
 
+Fig 1:
 ![convolution_overview](https://github.com/naynay007/pokemon-identifier-/assets/108524891/09de1864-a9e8-4718-a65c-680e838bbb26)
 
 
 >A 3x3 convolution over a 4x4 feature
-map Figure 3. A 3x3 convolution of depth 1 performed over a 5x5 input feature map, also of depth 1. There are nine possible 3x3 locations to extract tiles from the 5x5 feature map, so this convolution produces a 3x3 output feature map.
+map Figure 1. A 3x3 convolution of depth 1 performed over a 5x5 input feature map, also of depth 1. There are nine possible 3x3 locations to extract tiles from the 5x5 feature map, so this convolution produces a 3x3 output feature map.
 
->In Figure 3, the output feature map (3x3) is smaller than the input feature map (5x5). If you instead want the output feature map to have the same dimensions as the input feature map, you can add padding (blank rows/columns with all-zero values) to each side of the input feature map, producing a 7x7 matrix with 5x5 possible locations to extract a 3x3 tile.
+>In Figure 1, the output feature map (3x3) is smaller than the input feature map (5x5). If you instead want the output feature map to have the same dimensions as the input feature map, you can add padding (blank rows/columns with all-zero values) to each side of the input feature map, producing a 7x7 matrix with 5x5 possible locations to extract a 3x3 tile.
+
+>For each filter-tile pair, the CNN performs element-wise multiplication of the filter matrix and the tile matrix, and then sums all the elements of the resulting matrix to get a single value. Each of these resulting values for every filter-tile pair is then output in the convolved feature matrix which looks like this:
+>
+>![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/a95ca5d1-f7fa-44f5-812b-6b6172d1f6de)
+
+>[Uploading ML Practicum_ Image Classification  _  Machine Learning  _  Google for Developers.html…]()
+
+
 ## Running this project
 
 1. Add steps for running this project.
