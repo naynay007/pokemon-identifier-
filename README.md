@@ -21,8 +21,8 @@ A breakthrough in building models for image classification came with the discove
 >1. Convolution
 >A convolution extracts tiles of the input feature map, and applies filters to them to compute new features, producing an output feature map, or convolved feature (which may have a different size and depth than the input feature map). Convolutions are defined by two parameters:
 
-> **Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).**
->**The depth of the output feature map, which corresponds to the number of filters that are applied.**
+> 1.**Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).**
+> 2.**The depth of the output feature map, which corresponds to the number of filters that are applied.**
 
 >During a convolution, the filters (matrices the same size as the tile size) effectively slide over the input feature map's grid horizontally and vertically, one pixel at a time, extracting >each corresponding tile (see Figure 1).
 
