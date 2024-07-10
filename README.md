@@ -36,7 +36,7 @@ map Figure 1. A 3x3 convolution of depth 1 performed over a 5x5 input feature ma
 
 >In Figure 1, the output feature map (3x3) is smaller than the input feature map (5x5). If you instead want the output feature map to have the same dimensions as the input feature map, you can add padding (blank rows/columns with all-zero values) to each side of the input feature map, producing a 7x7 matrix with 5x5 possible locations to extract a 3x3 tile.
 
->For each filter-tile pair, the CNN performs element-wise multiplication of the filter matrix and the tile matrix, and then sums all the elements of the resulting matrix to get a single value. Each of these resulting values for every filter-tile pair is then output in the convolved feature matrix which looks like this:
+>For each filter-tile pair, **the CNN performs element-wise multiplication of the filter matrix and the tile matrix**, and then sums all the elements of the resulting matrix to get a single value. Each of these resulting values for every filter-tile pair is then output in the convolved feature matrix which looks like this:
 >
 >![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/a95ca5d1-f7fa-44f5-812b-6b6172d1f6de)
 
