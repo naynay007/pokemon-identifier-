@@ -66,11 +66,14 @@ during the test, it will output what it thinks the image/video is depicting with
 
 ## how to run this project 
 1. exit the docker using crtl + D
-2. enter the jetson-inference/python/training/classification directory
-3. type ls models/pokemon/
-4. type NET=models/pokemon
-5. type DATASET=data/pokemon
-6. [^1]: this is a footnote
+2. enter: the jetson-inference/python/training/classification directory
+3. enter: ls models/pokemon/
+4. enter: NET=models/pokemon
+5. enter: DATASET=data/pokemon
+### the program is all set now, it is ready to be tested on an image/video
+1. enter imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/Bulbasaur/03.png bulb2.png
+   at the end: "$DATASET/test/Bulbasaur/03.png" is the image being tested, to change what image you want to test, import a file to the bulbasaur test directory, and change the 03.png with thr desired image/video. the bulb2.png at the end of the code is what the tested image will be known as, and will show the result of its decision.
+
    
 
 
