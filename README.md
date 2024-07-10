@@ -1,9 +1,11 @@
 # pokemon-identifier-
 
- Add short description of project here > 
+ 
  # this AI will identify an image/video of a pokemon wether it is bulbasaur, squirtle or charmander.
 
-![add image descrition here](direct image link here)
+
+![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/addcc76c-6d6e-4e34-8ee0-8f1fa6480a43)
+
 
 ## The Algorithm
 
