@@ -84,4 +84,4 @@ during the test, it will output what it thinks the image/video is depicting with
 
 
 
-[View a video explanation here](video link)
+Granted the accuracy of this bublasaur is only 55.80%, it often scores higher in other images, and the accuracy of the AI can be improved via a larger dataset, and more training.
