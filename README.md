@@ -50,7 +50,7 @@ during the test, it will output what it thinks the image/video is depicting with
 
 
 
-## Running this project
+
 
 ## How to set up the project
 1. follow the instructions in this page https://student.idtech.com/courses/331/pages/old-re-training-image-classification-models-2?module_item_id=26828
@@ -59,6 +59,7 @@ during the test, it will output what it thinks the image/video is depicting with
 4. run this command to overcommit memory:   echo 1 | sudo tee /proc/sys/vm/overcommit_memory
 5. cd back to jetson-inference and enter: ./docker/run.sh
 6. once in the docker container, change directories to  jetson-inference/python/training/classification
+   
 ### now the terminal is all set for training, the data set just needs to be accesible.
 7. create a file and order it in this order: (name of dataset, in this case:) pokemon > test, training and val.
    test, training and val files are stored within pokemon, te amount of data in each file shall be: 10% in test, 10% in val, and 80% in training.
