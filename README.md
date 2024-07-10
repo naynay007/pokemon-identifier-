@@ -19,16 +19,18 @@ A breakthrough in building models for image classification came with the discove
 
 >To start, the CNN receives an input feature map: a three-dimensional matrix where the size of the first two dimensions corresponds to the length and width of the images in pixels. The size of the third dimension is 3 (corresponding to the 3 channels of a color image: red, green, and blue). The CNN comprises a stack of modules, each of which performs three operations.
 >1. Convolution
-A convolution extracts tiles of the input feature map, and applies filters to them to compute new features, producing an output feature map, or convolved feature (which may have a different size and depth than the input feature map). Convolutions are defined by two parameters:
+>A convolution extracts tiles of the input feature map, and applies filters to them to compute new features, producing an output feature map, or convolved feature (which may have a different size and depth than the input feature map). Convolutions are defined by two parameters:
 
-Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).
+>Size of the tiles that are extracted (typically 3x3 or 5x5 pixels).
 The depth of the output feature map, which corresponds to the number of filters that are applied.
 During a convolution, the filters (matrices the same size as the tile size) effectively slide over the input feature map's grid horizontally and vertically, one pixel at a time, extracting each corresponding tile (see Figure 3).
+>![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/d8722271-0e63-433c-a88f-5d815d262cec)
 
-A 3x3 convolution over a 4x4 feature
+
+>A 3x3 convolution over a 4x4 feature
 map Figure 3. A 3x3 convolution of depth 1 performed over a 5x5 input feature map, also of depth 1. There are nine possible 3x3 locations to extract tiles from the 5x5 feature map, so this convolution produces a 3x3 output feature map.
 
-In Figure 3, the output feature map (3x3) is smaller than the input feature map (5x5). If you instead want the output feature map to have the same dimensions as the input feature map, you can add padding (blank rows/columns with all-zero values) to each side of the input feature map, producing a 7x7 matrix with 5x5 possible locations to extract a 3x3 tile.
+>In Figure 3, the output feature map (3x3) is smaller than the input feature map (5x5). If you instead want the output feature map to have the same dimensions as the input feature map, you can add padding (blank rows/columns with all-zero values) to each side of the input feature map, producing a 7x7 matrix with 5x5 possible locations to extract a 3x3 tile.
 ## Running this project
 
 1. Add steps for running this project.
