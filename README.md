@@ -39,12 +39,41 @@ map Figure 1. A 3x3 convolution of depth 1 performed over a 5x5 input feature ma
 >
 >![image](https://github.com/naynay007/pokemon-identifier-/assets/108524891/a95ca5d1-f7fa-44f5-812b-6b6172d1f6de)
 
->[Uploading ML Practicum_ Image Classification  _  Machine Learning  _  Google for Developers.html…]()
+>![Capture](https://github.com/naynay007/pokemon-identifier-/assets/108524891/465d433b-2646-49af-932a-bd0b587edfb7)
+>
+> **In short, CNN puts the image through a filter to simplify the information, allowing it to learn the optimal values for the filter matrices that enables it to extract meaningful features (textures, edges, shapes) from the input feature map.**
+
+### how the AI is trained
+The AI will look at a train file, containing data sets that it will learn off of and validate its training periodically after each enoch(cycle of training) in a file named "val". after a set amount of enochs have been completed, the client may test the program via the "test file" containing images the AI has never seen before. images can be easily imported into these files as well.
+during the test, it will output what it thinks the image/video is depicting with a percentage of how sure the program is.
+
 
 
 ## Running this project
 
-1. Add steps for running this project.
-2. Make sure to include any required libraries that need to be installed for your project to run.
+## How to set up the project
+1. follow the instructions in this page https://student.idtech.com/courses/331/pages/old-re-training-image-classification-models-2?module_item_id=26828
+2. open VS code
+3. change directories to nvidia/jetson-inference/
+4. run this command to overcommit memory:   echo 1 | sudo tee /proc/sys/vm/overcommit_memory
+5. cd back to jetson-inference and enter: ./docker/run.sh
+6. once in the docker container, change directories to  jetson-inference/python/training/classification
+### now the terminal is all set for training, the data set just needs to be accesible.
+7. create a file and order it in this order: (name of dataset, in this case:) pokemon > test, training and val.
+   test, training and val files are stored within pokemon, te amount of data in each file shall be: 10% in test, 10% in val, and 80% in training.
+   test, training and val will each contain the data that is being trained, in this case, bulbasaur, charmander and squirtle.
+8.enter python3 train.py --model-dir=models/pokemon data/pokemon --enoch=100 to train the AI for 100 enochs. the enochs can be changed, although training should remain at a reasonable level to ensure overfitting does not occur (the AI finds for shortcuts to score high in the data given, but when handed new data will perform poorly)
+
+## how to run this project 
+1. exit the docker using crtl + D
+2. enter the jetson-inference/python/training/classification directory
+3. type ls models/pokemon/
+4. type NET=models/pokemon
+5. type DATASET=data/pokemon
+6. [^1] this is a footnote
+   
+
+
+
 
 [View a video explanation here](video link)
