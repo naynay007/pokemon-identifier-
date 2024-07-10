@@ -70,7 +70,7 @@ during the test, it will output what it thinks the image/video is depicting with
 3. type ls models/pokemon/
 4. type NET=models/pokemon
 5. type DATASET=data/pokemon
-6. [^1] this is a footnote
+6. [^1]: this is a footnote
    
 
 
