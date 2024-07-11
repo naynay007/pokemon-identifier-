@@ -74,7 +74,7 @@ during the test, it will output what it thinks the image/video is depicting with
 5. enter: DATASET=data/pokemon
 ### the program is all set now, it is ready to be tested on an image/video
 1. enter imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/Bulbasaur/03.png bulb2.png
-   at the end: "$DATASET/test/Bulbasaur/03.png" is the image being tested, to change what image you want to test, import a file to the bulbasaur test directory, and change the 03.png with thr desired image/video. the bulb2.png at the end of the code is what the tested image will be known as, and will show the result of its decision:
+   at the end: "$DATASET/test/Bulbasaur/03.png" is the image being tested, to change what image you want to test, import a file to the bulbasaur test directory, and change the 03.png with the desired image/video. the bulb2.png at the end of the code is what the tested image will be known as, and will show the result of its decision:
 ![Capture](https://github.com/naynay007/pokemon-identifier-/assets/108524891/5b0278d3-f802-45f1-ae0e-5cfdf3ff31eb)
 
 
