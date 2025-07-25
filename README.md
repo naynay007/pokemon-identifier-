@@ -45,7 +45,7 @@ map Figure 1. A 3x3 convolution of depth 1 performed over a 5x5 input feature ma
 > **In short, CNN puts the image through a filter to simplify the information, allowing it to learn the optimal values for the filter matrices that enables it to extract meaningful features (textures, edges, shapes) from the input feature map.**
 
 ### how the AI is trained
-The AI will look at a train file, containing data that it will learn off of and validate its training periodically after each epoch(cycle of training) in a file named "val". after a set amount of enochs have been completed, the client may test the program via the "test file" containing images the AI has never seen before. images can be easily imported into these files as well.
+The AI will look at a train file, containing data that it will learn off of and validate its training periodically after each epoch(cycle of training) in a file named "val". after a set amount of epochs have been completed, the client may test the program via the "test file" containing images the AI has never seen before. images can be easily imported into these files as well.
 during the test, it will output what it thinks the image/video is depicting with a percentage of how sure the program is.
 
 
